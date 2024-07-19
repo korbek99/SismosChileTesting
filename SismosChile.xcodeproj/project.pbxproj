@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		576965702C48E426003146FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769656F2C48E426003146FB /* AppDelegate.swift */; };
+		576965722C48E426003146FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965712C48E426003146FB /* SceneDelegate.swift */; };
+		576965742C48E426003146FB /* SismosChileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965732C48E426003146FB /* SismosChileViewController.swift */; };
+		576965772C48E426003146FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576965752C48E426003146FB /* Main.storyboard */; };
+		576965792C48E433003146FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576965782C48E433003146FB /* Assets.xcassets */; };
+		5769657C2C48E433003146FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5769657A2C48E433003146FB /* LaunchScreen.storyboard */; };
+		576965872C48E434003146FB /* Sismos_ChileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965862C48E434003146FB /* Sismos_ChileTests.swift */; };
+		576965922C48E434003146FB /* Sismos_ChileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965912C48E434003146FB /* Sismos_ChileUITests.swift */; };
+		576965B12C48E5B4003146FB /* SismosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965B02C48E5B4003146FB /* SismosTableViewCell.swift */; };
+		576965B62C48E8F1003146FB /* SismosChile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965B52C48E8F1003146FB /* SismosChile.swift */; };
+		576965BC2C48E960003146FB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965BB2C48E960003146FB /* NetworkService.swift */; };
+		576965C42C48EA71003146FB /* SismosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576965C32C48EA71003146FB /* SismosViewModel.swift */; };
+		57E90D3A2C4A07CB00648074 /* SismosDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D392C4A07CB00648074 /* SismosDetailsViewController.swift */; };
+		57E90D422C4A133000648074 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D412C4A133000648074 /* MapViewController.swift */; };
+		57E90D482C4A134600648074 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D472C4A134600648074 /* WebViewController.swift */; };
+		57E90D522C4A1F5000648074 /* SismosWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D512C4A1F5000648074 /* SismosWorldViewController.swift */; };
+		57E90D572C4A1F6300648074 /* SismosWorldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D562C4A1F6300648074 /* SismosWorldTableViewCell.swift */; };
+		57E90D5C2C4A253A00648074 /* SismosChileViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D5B2C4A253A00648074 /* SismosChileViewControllerTests.swift */; };
+		57E90D702C4A2DFF00648074 /* GeoJSONUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D6F2C4A2DFF00648074 /* GeoJSONUtils.swift */; };
+		57E90D752C4A2E5500648074 /* NetworkWorldService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D742C4A2E5500648074 /* NetworkWorldService.swift */; };
+		57E90D912C4AFE3A00648074 /* APIEndpointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E90D902C4AFE3A00648074 /* APIEndpointModel.swift */; };
+		57E90D992C4AFE6400648074 /* endpointsDev.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57E90D982C4AFE6400648074 /* endpointsDev.plist */; };
+		57E90D9E2C4AFE7A00648074 /* endpoints.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57E90D9D2C4AFE7A00648074 /* endpoints.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		576965832C48E434003146FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576965642C48E426003146FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5769656B2C48E426003146FB;
+			remoteInfo = "Sismos-Chile";
+		};
+		5769658E2C48E434003146FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 576965642C48E426003146FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5769656B2C48E426003146FB;
+			remoteInfo = "Sismos-Chile";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5769656C2C48E426003146FB /* SismosChile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SismosChile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5769656F2C48E426003146FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		576965712C48E426003146FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		576965732C48E426003146FB /* SismosChileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosChileViewController.swift; sourceTree = "<group>"; };
+		576965762C48E426003146FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		576965782C48E433003146FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5769657B2C48E433003146FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5769657D2C48E433003146FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576965822C48E434003146FB /* SismosChileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SismosChileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		576965862C48E434003146FB /* Sismos_ChileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sismos_ChileTests.swift; sourceTree = "<group>"; };
+		576965882C48E434003146FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5769658D2C48E434003146FB /* SismosChileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SismosChileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		576965912C48E434003146FB /* Sismos_ChileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sismos_ChileUITests.swift; sourceTree = "<group>"; };
+		576965932C48E434003146FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		576965B02C48E5B4003146FB /* SismosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosTableViewCell.swift; sourceTree = "<group>"; };
+		576965B52C48E8F1003146FB /* SismosChile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosChile.swift; sourceTree = "<group>"; };
+		576965BB2C48E960003146FB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		576965C32C48EA71003146FB /* SismosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosViewModel.swift; sourceTree = "<group>"; };
+		57E90D392C4A07CB00648074 /* SismosDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosDetailsViewController.swift; sourceTree = "<group>"; };
+		57E90D412C4A133000648074 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		57E90D472C4A134600648074 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		57E90D512C4A1F5000648074 /* SismosWorldViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosWorldViewController.swift; sourceTree = "<group>"; };
+		57E90D562C4A1F6300648074 /* SismosWorldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosWorldTableViewCell.swift; sourceTree = "<group>"; };
+		57E90D5B2C4A253A00648074 /* SismosChileViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SismosChileViewControllerTests.swift; sourceTree = "<group>"; };
+		57E90D6F2C4A2DFF00648074 /* GeoJSONUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONUtils.swift; sourceTree = "<group>"; };
+		57E90D742C4A2E5500648074 /* NetworkWorldService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWorldService.swift; sourceTree = "<group>"; };
+		57E90D902C4AFE3A00648074 /* APIEndpointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpointModel.swift; sourceTree = "<group>"; };
+		57E90D982C4AFE6400648074 /* endpointsDev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpointsDev.plist; sourceTree = "<group>"; };
+		57E90D9D2C4AFE7A00648074 /* endpoints.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpoints.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		576965692C48E426003146FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5769657F2C48E434003146FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5769658A2C48E434003146FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		576965632C48E426003146FB = {
+			isa = PBXGroup;
+			children = (
+				5769656E2C48E426003146FB /* Sismos-Chile */,
+				576965852C48E434003146FB /* Sismos-ChileTests */,
+				576965902C48E434003146FB /* Sismos-ChileUITests */,
+				5769656D2C48E426003146FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5769656D2C48E426003146FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5769656C2C48E426003146FB /* SismosChile.app */,
+				576965822C48E434003146FB /* SismosChileTests.xctest */,
+				5769658D2C48E434003146FB /* SismosChileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5769656E2C48E426003146FB /* Sismos-Chile */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D8F2C4AFE0700648074 /* EndPoints */,
+				576965BA2C48E93D003146FB /* Networking */,
+				576965AA2C48E47B003146FB /* LaunchScreen */,
+				576965A92C48E461003146FB /* Utils */,
+				576965A52C48E453003146FB /* StoryBoard */,
+				576965A12C48E44B003146FB /* Views */,
+				576965A02C48E443003146FB /* ViewModel */,
+				5769659F2C48E43C003146FB /* Model */,
+				5769656F2C48E426003146FB /* AppDelegate.swift */,
+				576965712C48E426003146FB /* SceneDelegate.swift */,
+				576965782C48E433003146FB /* Assets.xcassets */,
+				5769657D2C48E433003146FB /* Info.plist */,
+			);
+			path = "Sismos-Chile";
+			sourceTree = "<group>";
+		};
+		576965852C48E434003146FB /* Sismos-ChileTests */ = {
+			isa = PBXGroup;
+			children = (
+				576965862C48E434003146FB /* Sismos_ChileTests.swift */,
+				576965882C48E434003146FB /* Info.plist */,
+				57E90D5B2C4A253A00648074 /* SismosChileViewControllerTests.swift */,
+			);
+			path = "Sismos-ChileTests";
+			sourceTree = "<group>";
+		};
+		576965902C48E434003146FB /* Sismos-ChileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				576965912C48E434003146FB /* Sismos_ChileUITests.swift */,
+				576965932C48E434003146FB /* Info.plist */,
+			);
+			path = "Sismos-ChileUITests";
+			sourceTree = "<group>";
+		};
+		5769659F2C48E43C003146FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				576965B52C48E8F1003146FB /* SismosChile.swift */,
+				57E90D902C4AFE3A00648074 /* APIEndpointModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		576965A02C48E443003146FB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				576965C32C48EA71003146FB /* SismosViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		576965A12C48E44B003146FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D4F2C4A1F1800648074 /* SismosWorld */,
+				576965AB2C48E496003146FB /* SismosChile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		576965A52C48E453003146FB /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				576965752C48E426003146FB /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		576965A92C48E461003146FB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D6F2C4A2DFF00648074 /* GeoJSONUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		576965AA2C48E47B003146FB /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5769657A2C48E433003146FB /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		576965AB2C48E496003146FB /* SismosChile */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D372C4A074200648074 /* SismosDetails */,
+				57E90D362C4A072C00648074 /* Sismos */,
+			);
+			path = SismosChile;
+			sourceTree = "<group>";
+		};
+		576965AC2C48E4A1003146FB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				576965B02C48E5B4003146FB /* SismosTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		576965BA2C48E93D003146FB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				576965BB2C48E960003146FB /* NetworkService.swift */,
+				57E90D742C4A2E5500648074 /* NetworkWorldService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		57E90D362C4A072C00648074 /* Sismos */ = {
+			isa = PBXGroup;
+			children = (
+				576965AC2C48E4A1003146FB /* cell */,
+				576965732C48E426003146FB /* SismosChileViewController.swift */,
+			);
+			path = Sismos;
+			sourceTree = "<group>";
+		};
+		57E90D372C4A074200648074 /* SismosDetails */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D462C4A133400648074 /* Web */,
+				57E90D382C4A079900648074 /* Map */,
+				57E90D392C4A07CB00648074 /* SismosDetailsViewController.swift */,
+			);
+			path = SismosDetails;
+			sourceTree = "<group>";
+		};
+		57E90D382C4A079900648074 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D412C4A133000648074 /* MapViewController.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		57E90D462C4A133400648074 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D472C4A134600648074 /* WebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		57E90D4F2C4A1F1800648074 /* SismosWorld */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D502C4A1F3800648074 /* cell */,
+				57E90D512C4A1F5000648074 /* SismosWorldViewController.swift */,
+			);
+			path = SismosWorld;
+			sourceTree = "<group>";
+		};
+		57E90D502C4A1F3800648074 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D562C4A1F6300648074 /* SismosWorldTableViewCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		57E90D8F2C4AFE0700648074 /* EndPoints */ = {
+			isa = PBXGroup;
+			children = (
+				57E90D982C4AFE6400648074 /* endpointsDev.plist */,
+				57E90D9D2C4AFE7A00648074 /* endpoints.plist */,
+			);
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5769656B2C48E426003146FB /* SismosChile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576965962C48E434003146FB /* Build configuration list for PBXNativeTarget "SismosChile" */;
+			buildPhases = (
+				576965682C48E426003146FB /* Sources */,
+				576965692C48E426003146FB /* Frameworks */,
+				5769656A2C48E426003146FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SismosChile;
+			productName = "Sismos-Chile";
+			productReference = 5769656C2C48E426003146FB /* SismosChile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		576965812C48E434003146FB /* SismosChileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 576965992C48E434003146FB /* Build configuration list for PBXNativeTarget "SismosChileTests" */;
+			buildPhases = (
+				5769657E2C48E434003146FB /* Sources */,
+				5769657F2C48E434003146FB /* Frameworks */,
+				576965802C48E434003146FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				576965842C48E434003146FB /* PBXTargetDependency */,
+			);
+			name = SismosChileTests;
+			productName = "Sismos-ChileTests";
+			productReference = 576965822C48E434003146FB /* SismosChileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5769658C2C48E434003146FB /* SismosChileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5769659C2C48E434003146FB /* Build configuration list for PBXNativeTarget "SismosChileUITests" */;
+			buildPhases = (
+				576965892C48E434003146FB /* Sources */,
+				5769658A2C48E434003146FB /* Frameworks */,
+				5769658B2C48E434003146FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5769658F2C48E434003146FB /* PBXTargetDependency */,
+			);
+			name = SismosChileUITests;
+			productName = "Sismos-ChileUITests";
+			productReference = 5769658D2C48E434003146FB /* SismosChileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		576965642C48E426003146FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5769656B2C48E426003146FB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					576965812C48E434003146FB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5769656B2C48E426003146FB;
+					};
+					5769658C2C48E434003146FB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5769656B2C48E426003146FB;
+					};
+				};
+			};
+			buildConfigurationList = 576965672C48E426003146FB /* Build configuration list for PBXProject "SismosChile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 576965632C48E426003146FB;
+			productRefGroup = 5769656D2C48E426003146FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5769656B2C48E426003146FB /* SismosChile */,
+				576965812C48E434003146FB /* SismosChileTests */,
+				5769658C2C48E434003146FB /* SismosChileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5769656A2C48E426003146FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5769657C2C48E433003146FB /* LaunchScreen.storyboard in Resources */,
+				576965792C48E433003146FB /* Assets.xcassets in Resources */,
+				576965772C48E426003146FB /* Main.storyboard in Resources */,
+				57E90D9E2C4AFE7A00648074 /* endpoints.plist in Resources */,
+				57E90D992C4AFE6400648074 /* endpointsDev.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576965802C48E434003146FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5769658B2C48E434003146FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		576965682C48E426003146FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576965742C48E426003146FB /* SismosChileViewController.swift in Sources */,
+				576965B12C48E5B4003146FB /* SismosTableViewCell.swift in Sources */,
+				576965702C48E426003146FB /* AppDelegate.swift in Sources */,
+				57E90D522C4A1F5000648074 /* SismosWorldViewController.swift in Sources */,
+				57E90D482C4A134600648074 /* WebViewController.swift in Sources */,
+				576965722C48E426003146FB /* SceneDelegate.swift in Sources */,
+				57E90D422C4A133000648074 /* MapViewController.swift in Sources */,
+				576965BC2C48E960003146FB /* NetworkService.swift in Sources */,
+				57E90D3A2C4A07CB00648074 /* SismosDetailsViewController.swift in Sources */,
+				57E90D702C4A2DFF00648074 /* GeoJSONUtils.swift in Sources */,
+				57E90D912C4AFE3A00648074 /* APIEndpointModel.swift in Sources */,
+				576965B62C48E8F1003146FB /* SismosChile.swift in Sources */,
+				57E90D752C4A2E5500648074 /* NetworkWorldService.swift in Sources */,
+				57E90D572C4A1F6300648074 /* SismosWorldTableViewCell.swift in Sources */,
+				576965C42C48EA71003146FB /* SismosViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5769657E2C48E434003146FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57E90D5C2C4A253A00648074 /* SismosChileViewControllerTests.swift in Sources */,
+				576965872C48E434003146FB /* Sismos_ChileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		576965892C48E434003146FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				576965922C48E434003146FB /* Sismos_ChileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		576965842C48E434003146FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5769656B2C48E426003146FB /* SismosChile */;
+			targetProxy = 576965832C48E434003146FB /* PBXContainerItemProxy */;
+		};
+		5769658F2C48E434003146FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5769656B2C48E426003146FB /* SismosChile */;
+			targetProxy = 5769658E2C48E434003146FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		576965752C48E426003146FB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				576965762C48E426003146FB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5769657A2C48E433003146FB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5769657B2C48E433003146FB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		576965942C48E434003146FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		576965952C48E434003146FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		576965972C48E434003146FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = "Sismos-Chile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KorbekSA.Sismos-Chile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		576965982C48E434003146FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = "Sismos-Chile/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KorbekSA.Sismos-Chile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5769659A2C48E434003146FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = "Sismos-ChileTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KorbekSA.Sismos-ChileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SismosChile.app/SismosChile";
+			};
+			name = Debug;
+		};
+		5769659B2C48E434003146FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = "Sismos-ChileTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KorbekSA.Sismos-ChileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SismosChile.app/SismosChile";
+			};
+			name = Release;
+		};
+		5769659D2C48E434003146FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = "Sismos-ChileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KorbekSA.Sismos-ChileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sismos-Chile";
+			};
+			name = Debug;
+		};
+		5769659E2C48E434003146FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 828LF57WA4;
+				INFOPLIST_FILE = "Sismos-ChileUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "KorbekSA.Sismos-ChileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Sismos-Chile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		576965672C48E426003146FB /* Build configuration list for PBXProject "SismosChile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576965942C48E434003146FB /* Debug */,
+				576965952C48E434003146FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576965962C48E434003146FB /* Build configuration list for PBXNativeTarget "SismosChile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				576965972C48E434003146FB /* Debug */,
+				576965982C48E434003146FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		576965992C48E434003146FB /* Build configuration list for PBXNativeTarget "SismosChileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5769659A2C48E434003146FB /* Debug */,
+				5769659B2C48E434003146FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5769659C2C48E434003146FB /* Build configuration list for PBXNativeTarget "SismosChileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5769659D2C48E434003146FB /* Debug */,
+				5769659E2C48E434003146FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 576965642C48E426003146FB /* Project object */;
+}
